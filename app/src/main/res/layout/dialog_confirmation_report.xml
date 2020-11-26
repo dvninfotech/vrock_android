@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/_2e2c37"
+    >
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure_you_want_to_report_this_comment"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        />
+    <LinearLayout
+        android:id="@+id/ll_top1"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20sdp"
+
+        >
+        <TextView
+            android:id="@+id/tvYes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:textColor="@color/colorWhite"
+            android:text="Yes"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:background="@drawable/bg_round_corner_red"
+            />
+        <TextView
+            android:id="@+id/tvNo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:textColor="@color/colorWhite"
+            android:text="No"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:background="@drawable/bg_round_corner_red"
+            />
+    </LinearLayout>
+</LinearLayout>

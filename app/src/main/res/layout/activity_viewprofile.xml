@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".view.settings.ViewProfileActivity">
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/back_button"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/settings"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvBack" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBack">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_20sdp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/profileView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBack"
+                android:gravity="center"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@color/_2e2c37"
+                android:layout_marginTop="@dimen/_15sdp"
+                >
+                <ImageView
+                    android:id="@+id/profileSetupImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/_2sdp"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="@+id/profileView"
+                app:layout_constraintStart_toStartOf="@+id/profileView"
+                app:layout_constraintTop_toBottomOf="@+id/profileView" />
+
+            <TextView
+                android:id="@+id/tvFirstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/firstname"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+            <TextView
+                android:id="@+id/tvFirstNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
+
+            <TextView
+                android:id="@+id/tvLastName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/lastname"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFirstNameValue" />
+
+            <TextView
+                android:id="@+id/tvLastNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
+
+            <TextView
+                android:id="@+id/tvBio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/bio"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLastNameValue" />
+
+            <TextView
+                android:id="@+id/tvBioValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBio" />
+
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/phone"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBioValue" />
+
+            <TextView
+                android:id="@+id/tvPhoneValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/email"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhoneValue" />
+
+            <TextView
+                android:id="@+id/tvEmailValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/address"
+                android:textAllCaps="true"
+                android:textAlignment="viewStart"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmailValue" />
+
+            <TextView
+                android:id="@+id/tvAddressValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="GENDER"
+                android:textAlignment="viewStart"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddressValue" />
+
+            <TextView
+                android:id="@+id/tvGenderValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+            <TextView
+                android:id="@+id/tvFacebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/facebook"
+                android:textAlignment="viewStart"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGenderValue" />
+
+            <TextView
+                android:id="@+id/tvFacebookValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFacebook" />
+
+            <TextView
+                android:id="@+id/tvInstagram"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/instagram"
+                android:textAlignment="viewStart"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                android:textAllCaps="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFacebookValue" />
+
+            <TextView
+                android:id="@+id/tvInstagramValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstagram" />
+
+            <TextView
+                android:id="@+id/tvYoutube"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/youtube"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/_fc5241"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstagramValue" />
+
+            <TextView
+                android:id="@+id/tvYoutubeValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_medium"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvYoutube" />
+
+
+
+            <TextView
+                android:id="@+id/tvEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/bg_round_corner_red"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="@string/editcap"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvYoutubeValue" />
+
+
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

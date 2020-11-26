@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".view.settings.RewardActivity">
+
+
+    <TextView
+        android:id="@+id/titleBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/_2e2c37"
+        android:clickable="false"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/rewardpoints"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/back_button"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/walletLayout"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tvBack"
+            android:background="@drawable/wallet_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/iconLayout"
+                android:layout_margin="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:background="@drawable/white_rounded_bg"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iconLayout"
+                >
+
+                <TextView
+                    android:id="@+id/tvTotalCoins"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:id="@+id/tvWalletBalance"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/tvTotalCoins"
+                    app:layout_constraintStart_toStartOf="@id/tvTotalCoins"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvGiftCoins"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/tvWalletBalance"
+                    app:layout_constraintStart_toStartOf="@id/tvTotalCoins"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPurchaseCoins"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toBottomOf="@id/tvGiftCoins"
+                    app:layout_constraintStart_toStartOf="@id/tvTotalCoins"
+                    android:text=""
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+             <TextView
+                 android:id="@+id/tvRedeemCoins"
+                 android:textSize="10sp"
+                 android:visibility="gone"
+                 android:textColor="@color/color_red"
+                 android:layout_marginEnd="@dimen/_10sdp"
+                 android:paddingStart="@dimen/_10sdp"
+                 android:paddingEnd="@dimen/_10sdp"
+                 android:paddingTop="@dimen/_8sdp"
+                 android:paddingBottom="@dimen/_8sdp"
+                 android:background="@drawable/white_rounded_bg"
+                 android:text="Redeem Coins"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPackages"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@+id/walletLayout"
+            android:background="@color/color_red"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp">
+
+            <TextView
+                android:id="@+id/tvCoin"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textSize="15sp"
+                android:text="Coins"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="15sp"
+                android:text="Price"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/_10sdp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCoinPackage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clPackages"
+            app:layout_constraintBottom_toTopOf="@id/tvBuyNow"
+            android:clipToPadding="false"
+            android:background="@color/colorBlack"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_20sdp"
+            />
+
+
+    <TextView
+        android:id="@+id/tvBuyNow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/bg_round_corner_red"
+        android:clickable="false"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/buy_now"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:targetApi="lollipop"
+        android:visibility="gone"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

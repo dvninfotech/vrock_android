@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBlack"
+    android:paddingTop="@dimen/_3sdp"
+    >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#2b2b2c"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        />
+
+    <ImageView
+        android:id="@+id/tvHash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="#"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/round_hash_yellow"
+        android:paddingTop="@dimen/_4sdp"
+        />
+
+    <TextView
+        android:id="@+id/tvHashtag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/tvHash"
+        android:text="Hashtag"
+        android:textColor="@color/colorWhite"
+        android:textSize="14dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintStart_toEndOf="@+id/tvHash"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_8sdp"
+        />
+    <TextView
+        android:id="@+id/tvTrandHashtag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvHashtag"
+        android:text="Trending Hashtag"
+        android:textColor="@color/colorWhite"
+        android:textSize="10dp"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintStart_toStartOf="@+id/tvHashtag"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrandHashtag"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

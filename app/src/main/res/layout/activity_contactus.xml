@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".view.settings.ContactUsActivity">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/_2e2c37"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/contactus"
+        android:textAlignment="center"
+        android:clickable="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/back_button"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <ImageView
+        android:id="@+id/ivRefer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/contact_us"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_below="@+id/tvBack"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/tvFeelFree"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/feelfreetodropmessage"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_13sdp"
+        android:layout_below="@+id/ivRefer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvYourName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/yourname"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@+id/tvFeelFree"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/edtYourName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/grey_bg_for_cl"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:hint="@string/enteryourname"
+        android:textColorHint="@color/colorWhite"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@+id/tvYourName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/tvYourEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/youremail"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@+id/edtYourName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/edtYourEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/grey_bg_for_cl"
+        android:textColorHint="@color/colorWhite"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:hint="@string/enteryouremail"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@+id/tvYourEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etYourMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:fontFamily="@font/roboto_regular"
+        android:background="@drawable/grey_bg_for_cl"
+        android:inputType="textNoSuggestions"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:minHeight="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:maxHeight="@dimen/_100sdp"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:hint="@string/yourmessage"
+        android:gravity="top|start"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp"
+        android:layout_below="@+id/edtYourEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/tvSend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:background="@drawable/orange_bg"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/send"
+        android:textAllCaps="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_10sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

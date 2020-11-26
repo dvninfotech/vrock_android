@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "699242134381",
+    "firebase_url": "https://vrock-1fc6a.firebaseio.com",
+    "project_id": "vrock-1fc6a",
+    "storage_bucket": "vrock-1fc6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699242134381:android:e0b501c14f430006b5b864",
+        "android_client_info": {
+          "package_name": "com.vrockk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699242134381-1fa34f3hug5ub070j84rho6g400b6rtk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vrockk",
+            "certificate_hash": "88ea50ce130466648abb4bcdf51751584a24e122"
+          }
+        },
+        {
+          "client_id": "699242134381-3pqrcu1i31nne9uj5rg9pame8sanoct0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vrockk",
+            "certificate_hash": "c2db0ff1617213205c735af2920c5108792b2b42"
+          }
+        },
+        {
+          "client_id": "699242134381-5ju23tsa2mi1h58f8t7p2hor10orcbht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vrockk",
+            "certificate_hash": "aaf09cd09915ef61032ec86960fd22cdcca5cf41"
+          }
+        },
+        {
+          "client_id": "699242134381-j1j8qj3higrljqm6bfl6havmdukv1ldk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vrockk",
+            "certificate_hash": "cd35d73fdc3c006ace7dbb0ceaa41e4723c97b6c"
+          }
+        },
+        {
+          "client_id": "699242134381-nfjkk25ff0ubnc1ovqtpidsm86h8lnfa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vrockk",
+            "certificate_hash": "bc0d9d891c44201d7a11bc11b966c9d0582238eb"
+          }
+        },
+        {
+          "client_id": "699242134381-gme6r5hpr9qa56dbqgk7lq7jqhn2olca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vrockk",
+            "certificate_hash": "b706e861755be677db28b89215e6c5a26c4d5e96"
+          }
+        },
+        {
+          "client_id": "699242134381-cu6nt9uk2rsf698877t6jnp9ck8afj9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJWhL-aMRYHLdRm_x12YTkZn03alT2ARA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "699242134381-cu6nt9uk2rsf698877t6jnp9ck8afj9o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "699242134381-4cimfdgif39gj2shm4l48b5l0oormrud.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vrockkk"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

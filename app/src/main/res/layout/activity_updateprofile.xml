@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".view.settings.UpdateProfileActivity">
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/back_button"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_38sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/profileView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/_2e2c37"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clBack">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileSetupImg"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="#00000000"
+                        android:clickable="true"
+                        android:enabled="true"
+                        android:focusable="true"
+                        android:src="@drawable/user_placeholder" />
+
+                    <TextView
+                        android:id="@+id/tvAddProfilePic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profileSetupImg"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Add profile picture"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivImageProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:elevation="2dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toEndOf="@+id/profileView"
+                app:layout_constraintStart_toStartOf="@+id/profileView"
+                app:layout_constraintTop_toBottomOf="@+id/profileView" />
+
+
+            <TextView
+                android:id="@+id/tvFirstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/first_name"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+            <EditText
+                android:id="@+id/edtFirstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:clickable="false"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/enteryourfirstname"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/edit_profile_hint_color"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFirstName" />
+
+            <TextView
+                android:id="@+id/tvLastName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/last_name"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtFirstName" />
+
+            <EditText
+                android:id="@+id/edtLastName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:clickable="false"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/enteryourlastname"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/edit_profile_hint_color"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLastName" />
+
+            <TextView
+                android:id="@+id/tvBio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/biocap"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtLastName" />
+
+            <EditText
+                android:id="@+id/edtBio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/enteryourbio"
+                android:inputType="text|textNoSuggestions"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/edit_profile_hint_color"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvBio" />
+
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/phone"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtBio" />
+
+            <TextView
+                android:id="@+id/edtPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/enter_phone_number"
+                android:inputType="textEmailAddress"
+
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/edit_profile_hint_color"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPhone" />
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/email"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtPhone" />
+
+
+            <TextView
+                android:id="@+id/edtEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/enteryouremail"
+                android:inputType="textEmailAddress"
+
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/edit_profile_hint_color"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvemail" />
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/location"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+                tools:ignore="HardcodedText" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:paddingVertical="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/textLocation">
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="#00000000"
+                    android:cursorVisible="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center_vertical"
+                    android:hint="Select Location"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/edit_profile_hint_color"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="HardcodedText,LabelFor,TextFields" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/gender"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clLocation"
+                tools:ignore="HardcodedText" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clGender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:paddingVertical="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/textGender">
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:background="#00000000"
+                    android:cursorVisible="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center_vertical"
+                    android:hint="Select Gender"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="no"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/edit_profile_hint_color"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="HardcodedText,LabelFor,TextFields" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvFacebookLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/facebook"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clGender"
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/edtEFacebookLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/enter_facebook_profile_url"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/edit_profile_hint_color"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFacebookLink"
+                tools:ignore="HardcodedText,LabelFor,TextFields" />
+
+
+            <TextView
+                android:id="@+id/tvInstagramLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/instagram"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEFacebookLink"
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/edtEInstagramLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/enter_instagram_url"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/edit_profile_hint_color"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvInstagramLink"
+                tools:ignore="HardcodedText,LabelFor,TextFields" />
+
+
+            <TextView
+                android:id="@+id/tvYoutubeLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingHorizontal="@dimen/_30sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/youtube"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEInstagramLink"
+                tools:ignore="HardcodedText" />
+
+
+            <EditText
+                android:id="@+id/edtEYoutubeLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:background="@drawable/grey_bg_for_cl"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="@string/enter_instagram_url"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textAlignment="viewStart"
+                android:textColor="#ffffff"
+                android:textColorHint="@color/edit_profile_hint_color"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvYoutubeLink"
+                tools:ignore="HardcodedText,LabelFor,TextFields" />
+
+
+            <TextView
+                android:id="@+id/tvUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/orange_bg"
+                android:clickable="false"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingVertical="@dimen/_10sdp"
+                android:text="@string/update"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtEYoutubeLink" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/layout_loader" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

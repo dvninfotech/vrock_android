@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBlack"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingBottom="@dimen/_15sdp"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/user_placeholder"
+        app:layout_constraintTop_toTopOf="@+id/tvName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/ivProfile"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="12dp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:singleLine="true"
+        />
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/ivProfile"
+        android:textColor="@color/colorWhite"
+        android:textSize="12dp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        />
+
+    <TextView
+        android:id="@+id/tvBlock"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:background="@drawable/button_outline"
+        android:text="@string/unblock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="14sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/_2e2c37">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/_fab806"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvTitleCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:textStyle="bold"
+                android:padding="@dimen/_10sdp"/>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_top"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            >
+
+            <TextView
+                android:id="@+id/tvAlertMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@android:color/white"
+                android:text=""
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <LinearLayout
+                android:id="@+id/extraContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvAlertMessage"
+                >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/noBtn"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:padding="@dimen/_2sdp"
+                android:text=""
+                android:textSize="@dimen/_12sdp"
+                android:background="@drawable/custom_alert_nuetral_outline"
+                app:layout_constraintTop_toBottomOf="@id/extraContainer"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <Button
+                android:id="@+id/positiveBtn"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:padding="@dimen/_2sdp"
+                android:textSize="@dimen/_12sdp"
+                android:text=""
+                android:background="@drawable/custom_alert_positive_background"
+                app:layout_constraintTop_toBottomOf="@id/extraContainer"
+                app:layout_constraintLeft_toLeftOf="@id/noBtn"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

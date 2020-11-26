@@ -1,0 +1,5 @@
+include ':gpuv'
+include ':Epmedia'
+include ':evideolib'
+include ':app'
+rootProject.name='Vrockk'

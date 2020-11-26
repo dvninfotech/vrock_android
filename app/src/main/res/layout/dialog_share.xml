@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_top"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    >
+    <TextView
+        android:id="@+id/tv_dialogmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/you_need_to_download_the_media_before_sharing_or_you_can_share_only_links_with_others"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        />
+    <LinearLayout
+        android:id="@+id/ll_top1"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20sdp"
+        android:background="@color/colorWhite"
+        >
+    <TextView
+        android:id="@+id/tvDuet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:textColor="@color/colorBlack"
+        android:text="DUET"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:gravity="center"
+
+        />
+    <TextView
+        android:id="@+id/tvShareLink"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:textColor="@color/colorBlack"
+        android:text="SHARE LINK"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        />
+    </LinearLayout>
+</LinearLayout>

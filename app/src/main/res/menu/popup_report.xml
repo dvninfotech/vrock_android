@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/spam"
+        android:title="it's spam" />
+
+    <item
+        android:id="@+id/false_information"
+        android:title="False Information" />
+
+    <item
+        android:id="@+id/bullying"
+        android:title="Bullying and harassment" />
+
+    <item
+        android:id="@+id/just"
+        android:title="I just don't Like" />
+
+</menu>

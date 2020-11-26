@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:background="@color/colorWhite"
+    app:cardCornerRadius="@dimen/_10sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<LinearLayout
+    android:id="@+id/ll_top"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:background="@color/_2e2c37"
+    >
+    <TextView
+        android:id="@+id/tv_dialogmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/why_are_you_reporting_this"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_regular"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        />
+
+    <TextView
+        android:id="@+id/tvSpam"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:textColor="@android:color/white"
+        android:text="it's spam"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:id="@+id/tvInformation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:textColor="@android:color/white"
+        android:text="False Information"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:id="@+id/tvBullying"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:textColor="@android:color/white"
+        android:text="Bullying and harassment"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:id="@+id/tvJust"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:textColor="@android:color/white"
+        android:text="I just don't Like"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:id="@+id/tvInpropriate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp"
+        android:textColor="@android:color/white"
+        android:text="Inappropriate Content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAllCaps="false"
+        />
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

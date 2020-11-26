@@ -1,0 +1,674 @@
+<resources>
+    <string name="app_name">vRockk</string>
+
+    <!--    <string name="api_key">AIzaSyAKAi_jj3xLYgobuTASoeEmrskgxUlK8cE</string>-->
+    <string name="api_key">AIzaSyC0hDNU-QbyXmg4NoenWKOo4thcOKB7YnQ</string>
+
+    <string name="facebook_app_id">314915349711975</string>
+    <string name="fb_login_protocol_scheme">fb314915349711975</string>
+
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="discover">Discover</string>
+    <string name="challenges">Challenges</string>
+    <string name="me">Me</string>
+    <string name="two_point_eight">2.8M</string>
+    <string name="following">Following</string>
+    <string name="for_you">For You</string>
+    <string name="like">Like</string>
+    <string name="comments">Comments</string>
+    <string name="duet">Duet</string>
+    <string name="vrockk">vRockk</string>
+
+
+    <string name="edit">Edit</string>
+    <string name="likes">LIKES</string>
+    <string name="followers">Followers</string>
+    <string name="suggesstionsforyou">Suggestions for you</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">UnFollow</string>
+    <string name="back">BACK</string>
+    <string name="settings">Settings</string>
+    <string name="refertofriend">Refer to Friend</string>
+    <string name="redeem_coins">Redeem Coins</string>
+    <string name="rewardpoints">Rewards Points</string>
+    <string name="block_list">Block list</string>
+    <string name="notification">Notifications</string>
+    <string name="changepassword">Change Password</string>
+    <string name="contactus">Contact Us</string>
+    <string name="termsandcondition">Terms and Conditions</string>
+    <string name="privacypolicy">Privacy policy</string>
+    <string name="aboutapp">About App</string>
+    <string name="logout">Logout</string>
+
+    <!--    <string name="referdesc">it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</string>-->
+    <string name="referdesc">Refer vRockk to your friends and let them join in on the adventure. As a reward, you will get extra coins.</string>
+    <string name="whatsapp">WHATSAPP</string>
+    <string name="shareyourcode">"Share your refer code "</string>
+    <string name="loyalitypoints">"Loyalty Points "</string>
+    <string name="availpoints">"Available loyalty Points worth of $200 "</string>
+    <string name="proceedtoredeem">PROCEED FOR REDEEM</string>
+    <string name="videolikes">Video like</string>
+    <string name="superlikes">Super like</string>
+    <string name="share">Share</string>
+    <string name="earnthroughreferral">Earned through referrals</string>
+    <string name="totalearn">Total Earned</string>
+    <string name="totalredeem">Total Redeem</string>
+    <string name="availablepoint">Available points</string>
+    <string name="feelfreetodropmessage">Feel free to drop us a message!</string>
+    <string name="yourname">YOUR NAME</string>
+    <string name="enteryourname">Enter Your Name</string>
+    <string name="youremail">YOUR EMAIL</string>
+    <string name="enteryouremail">Enter Your Email</string>
+    <string name="yourmessage">Your Message</string>
+    <string name="currentpassword">CURRENT PASSWORD</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="enterpassword">Enter Password</string>
+    <string name="enternewpassword">Enter New Password</string>
+    <string name="newpassword">NEW PASSWORD</string>
+    <string name="confnewpassword">Confirm New Password</string>
+    <string name="confnewpasswordcap">CONFIRM NEW PASSWORD</string>
+    <string name="save">SAVE</string>
+    <string name="name">\@KyleAllen</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="bio">Bio</string>
+    <string name="phone">Phone</string>
+    <string name="phone_cap">PHONE</string>
+    <string name="phone_cap_">*PHONE</string>
+    <string name="email">Email</string>
+    <string name="instagram">Instagram</string>
+    <string name="editcap">EDIT</string>
+    <string name="firstnamecap">FIRST NAME</string>
+    <string name="lastnamecap">LAST NAME</string>
+    <string name="enteryourfirstname">Enter Your First Name</string>
+    <string name="enteryourlastname">Enter Your Last Name</string>
+    <string name="biocap">BIO</string>
+    <string name="enteryourbio">Enter Your Bio</string>
+    <string name="emailcap">EMAIL</string>
+    <string name="emailcap_">*EMAIL</string>
+    <string name="instagramcap">INSTAGRAM</string>
+    <string name="enteryourinstagram">Enter Your Instagram</string>
+    <string name="update">UPDATE</string>
+    <string name="quikpitchstar">\@quikpitchstar</string>
+    <string name="hashtag">\@hashtag</string>
+    <string name="challengesname">\@Challengesname</string>
+    <string name="recommended">Recommended</string>
+    <string name="challenges_tags">Challenges Tags</string>
+    <string name="post_now">POST NOW</string>
+    <string name="offcialmisjk">\@offcialmisjk</string>
+    <string name="allen">\@Allen</string>
+    <string name="pick_sound">Pick Sound</string>
+    <string name="hotsong">Hot Song</string>
+    <string name="selectapoint">Select a point to stop recording</string>
+    <string name="startcountdown">START COUNTDOWN</string>
+    <string name="forgot">FORGOT?</string>
+    <string name="enteremail">Enter Email</string>
+    <string name="write_here">Write here...</string>
+    <string name="alert">Alert</string>
+    <string name="pleasegiveallrequiredpermissions">Please allow all required permissions to use our service</string>
+    <string name="gotosettings">Go to Settings</string>
+    <string name="new_">New</string>
+    <string name="resend_code">Resend code</string>
+    <string name="gift">Gift</string>
+    <string name="report">Report</string>
+    <string name="followings">Followings</string>
+    <string name="cancel">Cancel</string>
+    <string name="send">Send</string>
+    <string name="view_profile">View Profile</string>
+    <string name="profile">Profile</string>
+    <string name="done">Done</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="signup_with_phone">SIGNUP WITH PHONE</string>
+    <string name="signup_with_email">SIGNUP WITH EMAIL</string>
+    <string name="Login">Login</string>
+    <string name="enter_email_id">Enter Email Id</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="offline_check_your_internet">You are offline. Please check your Internet Connection</string>
+
+
+    <string name="enter_email">Enter Email</string>
+
+
+    <string name="please_enter_phone_number">Please enter phone number</string>
+    <string name="please_select_date_of_birth">Please select date of birth</string>
+
+
+    <string name="resend_otp">Resend code</string>
+    <string name="please_enter_first_name">Please enter first name</string>
+    <string name="please_enter_last_name">Please enter last name</string>
+    <string name="please_enter_username">Please enter username</string>
+    <string name="please_enter_bio">Please enter bio</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_valid_email_address">Please enter valid email address</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="please_enter_referral_code">Please enter Referral code</string>
+    <string name="enter_facebook_profile_url">Enter link to your Facebook</string>
+    <string name="enter_instagram_url">Enter link to your Instagram</string>
+    <string name="enter_youtube_url">Enter link to your Youtube</string>
+    <string name="enter_either_phone_or_email">Please enter valid Email or Phone number</string>
+
+    <string name="confrim_password_not_match">Confirm password didn\'t match</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="are_you_sure_you_want_to_delete_your_account">Are you sure you want to delete your account?</string>
+    <string name="are_you_sure_you_want_to_disable_your_account">Are you sure you want to disable your account?</string>
+    <string name="delete_all_my_contents">Delete all my content</string>
+    <string name="delete_post">Are you sure you want to delete this post?</string>
+    <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>
+    <string name="are_you_sure_you_want_to_discard_video">Are you sure you want to discard video?</string>
+    <string name="confirm_you_want_to_send_gift">Are you sure you want to send the gift?</string>
+    <string name="msg_you_can_redeem_money_from">You can redeem your money directly to your bank account starting 15 November, 2020 and once you have more than 8000 coins in your wallet.</string>
+    <!--    <string name="you_need_to_login_first">You need to login first?</string>-->
+    <string name="you_need_to_login_first">Please login with your credentials</string>
+    <string name="need_to_login_to_access_this">You need to Login to access this Feature.</string>
+    <string name="confirm">Confirm</string>
+    <string name="close">Close</string>
+    <string name="no">No</string>
+    <string name="ok">ok</string>
+    <string name="yes">Yes</string>
+    <string name="login">Login</string>
+    <string name="unblock">Unblock</string>
+
+    <string name="you_must_have_eight_characters_in_your_password">You must have 8 characters in your password</string>
+    <string name="you_must_have_eight_characters_in_your_current_password">You must have 8 characters in your current password</string>
+    <string name="you_must_have_eight_characters_in_your_new_password">You must have 8 characters in your new password</string>
+    <string name="you_must_have_eight_characters_in_your_confirm_password">You must have 8 characters in your confirm password</string>
+    <string name="you_must_have_eight_characters_in_your_phone">You must have 8 characters in your phone number</string>
+    <string name="please_enter_current_password">Please enter current password</string>
+    <string name="please_enter_new_password">please enter new password</string>
+    <string name="current_password_and_new_password_should_not_be_same">current password and new password should not be same</string>
+    <string name="please_select_current_address">Please select location</string>
+    <string name="passwords_not_matching">Password and Confirm Password don\'t match</string>
+    <string name="please_enter_valid_fb_url">Please enter valid facebook Url</string>
+    <string name="please_enter_valid_insta_url">Please enter valid Instagram Url</string>
+    <string name="please_enter_valid_yt_url">Please enter valid Youtube Url</string>
+    <string name="please_enter_description">Please enter description</string>
+
+    <string name="bad_extension_error">Sorry, Ringdroid is not yet able to edit files of type</string>
+    <string name="no_extension_error">Sorry, Ringdroid can\'t edit a file if it doesn\'t have an extension like .mp3 or .wav</string>
+    <string name="address">Address</string>
+    <string name="gender">GENDER</string>
+    <string name="tag">Tag</string>
+    <string name="user">User</string>
+    <string name="edit_email">Edit Email</string>
+    <string name="edit_phone_number">Edit Phone Number</string>
+
+    <string name="permission_request">This app needs permission for camera and audio recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="message_need_permission">Need Permissions</string>
+    <string name="message_permission">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="title_go_to_setting">GOTO SETTINGS</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="play_stop">Play or Stop</string>
+    <string name="you_need_to_download_the_media_before_sharing_or_you_can_share_only_links_with_others">You can share only links with others</string>
+    <string name="why_are_you_reporting_this">Why are you reporting this?</string>
+    <string name="terms_and_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="accept_terms_and_condition">Please accept the Terms and Conditions</string>
+    <string name="report_send_succesfully">Report sent successfully</string>
+
+    <string name="are_you_sure_you_want_to_report_this_post">Are you sure you want to report this post?</string>
+    <string name="are_you_sure_you_want_to_report_this_comment">Are you sure you want to report this comment?</string>
+    <string name="i_accept"><![CDATA[I accept to the term & condition]]></string>
+    <string name="please_enter_your_name">please enter your name</string>
+    <string name="please_enter_your_email">please enter your email</string>
+    <string name="please_enter_your_message">please enter your message</string>
+    <string name="i_accepet_terms"><![CDATA[I accept the Terms & Conditions]]></string>
+    <string name="you_should_be_18_plus_to_continue">You should be 18+ to continue</string>
+    <string name="buy">Buy</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="enter_the_number_of_coins_you_want_to_purchase">Enter the number of coins you want to purchase</string>
+    <string name="tax">Tax</string>
+    <string name="amount">Amount</string>
+    <string name="total_Amount">Total Amount</string>
+    <string name="enter_vrock_id">Enter vRockk Id</string>
+
+    <string name="your_account_is_disabled_by_admin">Your Account is disabled by admin</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="username">*USERNAME</string>
+    <string name="dob">DOB</string>
+    <string name="location">LOCATION</string>
+    <string name="email_">*EMAIL</string>
+    <string name="phone_">*PHONE</string>
+    <string name="password">*PASSWORD</string>
+    <string name="confirm_password_">*CONFIRM PASSWORD</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="facebook">Facebook</string>
+    <string name="youtube">Youtube</string>
+    <string name="vrock_id">*vRockk ID</string>
+    <string name="verify_">VERIFY</string>
+    <string name="next_">NEXT</string>
+    <string name="signup_">SIGN UP</string>
+
+    <string name="send_gifts_to_your_loved">Send gifts to your loved onces that they can redeem.</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="enter_password">Enter Password</string>
+
+    <string name="uploading_video">Uploading Video</string>
+    <string name="disable_account">Disable Account</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="error_in_transaction">There was some error in Transaction</string>
+    <string name="purchase_in_progress">Transaction in Progress..</string>
+    <string name="transaction_for_this_item_in_progress">Transaction for this Item is already in Progress</string>
+    <string name="transaction_will_be_cancelled_due_to_error">There was some Problem. You will get a refund.</string>
+    <string name="you_will_have_to_verify_otp_again">You will have to verify OTP again</string>
+    <string name="social_email_not_found">Email from Social Login Not found</string>
+
+    <string-array name="photo_editor_emoji">
+
+        <!-- Smiles -->
+        <item>u+1f604</item>
+        <item>u+1f603</item>
+        <item>u+1f600</item>
+        <item>u+1f60a</item>
+        <item>u+263a</item>
+        <item>u+1f609</item>
+        <item>u+1f60d</item>
+        <item>u+1f618</item>
+        <item>u+1f61a</item>
+        <item>u+1f617</item>
+        <item>u+1f619</item>
+        <item>u+1f61c</item>
+        <item>u+1f61d</item>
+        <item>u+1f61b</item>
+        <item>u+1f633</item>
+        <item>u+1f601</item>
+        <item>u+1f614</item>
+        <item>u+1f60c</item>
+        <item>u+1f612</item>
+        <item>u+1f61e</item>
+        <item>u+1f623</item>
+        <item>u+1f622</item>
+        <item>u+1f602</item>
+        <item>u+1f62d</item>
+        <item>u+1f62a</item>
+        <item>u+1f625</item>
+        <item>u+1f630</item>
+        <item>u+1f605</item>
+        <item>u+1f613</item>
+        <item>u+1f629</item>
+        <item>u+1f62b</item>
+        <item>u+1f628</item>
+        <item>u+1f631</item>
+        <item>u+1f620</item>
+        <item>u+1f621</item>
+        <item>u+1f624</item>
+
+        <!--People -->
+        <item>u+1f616</item>
+        <item>u+1f606</item>
+        <item>u+1f60b</item>
+        <item>u+1f637</item>
+        <item>u+1f60e</item>
+        <item>u+1f634</item>
+        <item>u+1f635</item>
+        <item>u+1f632</item>
+        <item>u+1f61f</item>
+        <item>u+1f626</item>
+        <item>u+1f627</item>
+        <item>u+1f608</item>
+        <item>u+1f47f</item>
+        <item>u+1f62e</item>
+        <item>u+1f62c</item>
+        <item>u+1f610</item>
+        <item>u+1f615</item>
+        <item>u+1f62f</item>
+        <item>u+1f636</item>
+        <item>u+1f607</item>
+        <item>u+1f60f</item>
+        <item>u+1f611</item>
+        <item>u+1f472</item>
+        <item>u+1f473</item>
+        <item>u+1f46e</item>
+        <item>u+1f477</item>
+        <item>u+1f482</item>
+        <item>u+1f476</item>
+        <item>u+1f466</item>
+        <item>u+1f467</item>
+        <item>u+1f468</item>
+        <item>u+1f469</item>
+        <item>u+1f474</item>
+        <item>u+1f475</item>
+        <item>u+1f471</item>
+        <item>u+1f47c</item>
+        <item>u+1f478</item>
+        <item>u+1f63a</item>
+        <item>u+1f638</item>
+        <item>u+1f63b</item>
+        <item>u+1f63d</item>
+        <item>u+1f63c</item>
+        <item>u+1f640</item>
+        <item>u+1f63f</item>
+        <item>u+1f639</item>
+        <item>u+1f63e</item>
+        <item>u+1f479</item>
+        <item>u+1f47a</item>
+        <item>u+1f648</item>
+        <item>u+1f649</item>
+        <item>u+1f64a</item>
+        <item>u+1f480</item>
+        <item>u+1f47d</item>
+        <item>u+1f4a9</item>
+        <item>u+1f525</item>
+        <item>u+2728</item>
+        <item>u+1f31f</item>
+        <item>u+1f4ab</item>
+        <item>u+1f4a5</item>
+        <item>u+1f4a2</item>
+        <item>u+1f4a6</item>
+        <item>u+1f4a7</item>
+        <item>u+1f4a4</item>
+        <item>u+1f4a8</item>
+        <item>u+1f442</item>
+        <item>u+1f440</item>
+        <item>u+1f443</item>
+        <item>u+1f445</item>
+        <item>u+1f444</item>
+        <item>u+1f44d</item>
+        <item>u+1f44e</item>
+        <item>u+1f44c</item>
+        <item>u+1f44a</item>
+        <item>u+270a</item>
+        <item>u+270c</item>
+        <item>u+1f44b</item>
+        <item>u+270b</item>
+        <item>u+1f450</item>
+        <item>u+1f446</item>
+        <item>u+1f447</item>
+        <item>u+1f449</item>
+        <item>u+1f448</item>
+        <item>u+1f64c</item>
+        <item>u+1f64f</item>
+        <item>u+261d</item>
+        <item>u+1f44f</item>
+        <item>u+1f4aa</item>
+        <item>u+1f6b6</item>
+        <item>u+1f3c3</item>
+        <item>u+1f483</item>
+        <item>u+1f46b</item>
+        <item>u+1f46a</item>
+        <item>u+1f46c</item>
+        <item>u+1f46d</item>
+        <item>u+1f48f</item>
+        <item>u+1f491</item>
+        <item>u+1f46f</item>
+        <item>u+1f646</item>
+        <item>u+1f645</item>
+        <item>u+1f481</item>
+        <item>u+1f64b</item>
+        <item>u+1f486</item>
+        <item>u+1f487</item>
+        <item>u+1f485</item>
+        <item>u+1f470</item>
+        <item>u+1f64e</item>
+        <item>u+1f64d</item>
+        <item>u+1f647</item>
+        <item>u+1f3a9</item>
+        <item>u+1f451</item>
+        <item>u+1f452</item>
+        <item>u+1f45f</item>
+        <item>u+1f45e</item>
+        <item>u+1f461</item>
+        <item>u+1f460</item>
+        <item>u+1f462</item>
+        <item>u+1f455</item>
+        <item>u+1f454</item>
+        <item>u+1f45a</item>
+        <item>u+1f457</item>
+        <item>u+1f3bd</item>
+        <item>u+1f456</item>
+        <item>u+1f458</item>
+        <item>u+1f459</item>
+        <item>u+1f4bc</item>
+        <item>u+1f45c</item>
+        <item>u+1f45d</item>
+        <item>u+1f45b</item>
+        <item>u+1f453</item>
+        <item>u+1f380</item>
+        <item>u+1f302</item>
+        <item>u+1f484</item>
+        <item>u+1f49b</item>
+        <item>u+1f499</item>
+        <item>u+1f49c</item>
+        <item>u+1f49a</item>
+        <item>u+2764</item>
+        <item>u+1f494</item>
+        <item>u+1f497</item>
+        <item>u+1f493</item>
+        <item>u+1f495</item>
+        <item>u+1f496</item>
+        <item>u+1f49e</item>
+        <item>u+1f498</item>
+        <item>u+1f48c</item>
+        <item>u+1f48b</item>
+        <item>u+1f48d</item>
+        <item>u+1f48e</item>
+        <item>u+1f464</item>
+        <item>u+1f465</item>
+        <item>u+1f4ac</item>
+        <item>u+1f463</item>
+        <item>u+1f4ad</item>
+
+        <!--  Nature-->
+        <item>u+1f436</item>
+        <item>u+1f43a</item>
+        <item>u+1f431</item>
+        <item>u+1f42d</item>
+        <item>u+1f439</item>
+        <item>u+1f430</item>
+        <item>u+1f438</item>
+        <item>u+1f42f</item>
+        <item>u+1f428</item>
+        <item>u+1f43b</item>
+        <item>u+1f437</item>
+        <item>u+1f43d</item>
+        <item>u+1f42e</item>
+        <item>u+1f417</item>
+        <item>u+1f435</item>
+        <item>u+1f412</item>
+        <item>u+1f434</item>
+        <item>u+1f411</item>
+        <item>u+1f418</item>
+        <item>u+1f43c</item>
+        <item>u+1f427</item>
+        <item>u+1f426</item>
+        <item>u+1f424</item>
+        <item>u+1f425</item>
+        <item>u+1f423</item>
+        <item>u+1f414</item>
+        <item>u+1f40d</item>
+        <item>u+1f422</item>
+        <item>u+1f41b</item>
+        <item>u+1f41d</item>
+        <item>u+1f41c</item>
+        <item>u+1f41e</item>
+        <item>u+1f40c</item>
+        <item>u+1f419</item>
+        <item>u+1f41a</item>
+        <item>u+1f420</item>
+        <item>u+1f41f</item>
+        <item>u+1f42c</item>
+        <item>u+1f433</item>
+        <item>u+1f40b</item>
+        <item>u+1f404</item>
+        <item>u+1f40f</item>
+        <item>u+1f400</item>
+        <item>u+1f403</item>
+        <item>u+1f405</item>
+        <item>u+1f407</item>
+        <item>u+1f409</item>
+        <item>u+1f40e</item>
+        <item>u+1f410</item>
+        <item>u+1f413</item>
+        <item>u+1f415</item>
+        <item>u+1f416</item>
+        <item>u+1f401</item>
+        <item>u+1f402</item>
+        <item>u+1f432</item>
+        <item>u+1f421</item>
+        <item>u+1f40a</item>
+        <item>u+1f42b</item>
+        <item>u+1f42a</item>
+        <item>u+1f406</item>
+        <item>u+1f408</item>
+        <item>u+1f429</item>
+        <item>u+1f43e</item>
+        <item>u+1f490</item>
+        <item>u+1f338</item>
+        <item>u+1f337</item>
+        <item>u+1f340</item>
+        <item>u+1f339</item>
+        <item>u+1f33b</item>
+        <item>u+1f33a</item>
+        <item>u+1f341</item>
+        <item>u+1f343</item>
+        <item>u+1f342</item>
+        <item>u+1f33f</item>
+        <item>u+1f33e</item>
+        <item>u+1f344</item>
+        <item>u+1f335</item>
+        <item>u+1f334</item>
+        <item>u+1f332</item>
+        <item>u+1f333</item>
+        <item>u+1f330</item>
+        <item>u+1f331</item>
+        <item>u+1f33c</item>
+        <item>u+1f310</item>
+        <item>u+1f31e</item>
+        <item>u+1f31d</item>
+        <item>u+1f31a</item>
+        <item>u+1f311</item>
+        <item>u+1f312</item>
+        <item>u+1f313</item>
+        <item>u+1f314</item>
+        <item>u+1f315</item>
+        <item>u+1f316</item>
+        <item>u+1f317</item>
+        <item>u+1f318</item>
+        <item>u+1f31c</item>
+        <item>u+1f31b</item>
+        <item>u+1f319</item>
+        <item>u+1f30d</item>
+        <item>u+1f30e</item>
+        <item>u+1f30f</item>
+        <item>u+1f30b</item>
+        <item>u+1f30c</item>
+        <item>u+1f320</item>
+        <item>u+2b50</item>
+        <item>u+2600</item>
+        <item>u+26c5</item>
+        <item>u+2601</item>
+        <item>u+26a1</item>
+        <item>u+2614</item>
+        <item>u+2744</item>
+        <item>u+26c4</item>
+        <item>u+1f300</item>
+        <item>u+1f301</item>
+        <item>u+1f308</item>
+        <item>u+1f30a</item>
+
+        <!--Places-->
+        <item>u+1f3e0</item>
+        <item>u+1f3e1</item>
+        <item>u+1f3eb</item>
+        <item>u+1f3e2</item>
+        <item>u+1f3e3</item>
+        <item>u+1f3e5</item>
+        <item>u+1f3e6</item>
+        <item>u+1f3ea</item>
+        <item>u+1f3e9</item>
+        <item>u+1f3e8</item>
+        <item>u+1f492</item>
+        <item>u+26ea</item>
+        <item>u+1f3ec</item>
+        <item>u+1f3e4</item>
+        <item>u+1f307</item>
+        <item>u+1f306</item>
+        <item>u+1f3ef</item>
+        <item>u+1f3f0</item>
+        <item>u+26fa</item>
+        <item>u+1f3ed</item>
+        <item>u+1f5fc</item>
+        <item>u+1f5fe</item>
+        <item>u+1f5fb</item>
+        <item>u+1f304</item>
+        <item>u+1f305</item>
+        <item>u+1f303</item>
+        <item>u+1f5fd</item>
+        <item>u+1f309</item>
+        <item>u+1f3a0</item>
+        <item>u+1f3a1</item>
+        <item>u+26f2</item>
+        <item>u+1f3a2</item>
+        <item>u+1f6a2</item>
+        <item>u+26f5</item>
+        <item>u+1f6a4</item>
+        <item>u+1f6a3</item>
+        <item>u+2693</item>
+        <item>u+1f680</item>
+        <item>u+2708</item>
+        <item>u+1f4ba</item>
+        <item>u+1f681</item>
+        <item>u+1f682</item>
+        <item>u+1f68a</item>
+        <item>u+1f689</item>
+        <item>u+1f69e</item>
+        <item>u+1f686</item>
+        <item>u+1f684</item>
+        <item>u+1f685</item>
+        <item>u+1f688</item>
+        <item>u+1f687</item>
+        <item>u+1f69d</item>
+        <item>u+1f68b</item>
+        <item>u+1f683</item>
+        <item>u+1f68e</item>
+        <item>u+1f68c</item>
+        <item>u+1f68d</item>
+        <item>u+1f699</item>
+        <item>u+1f698</item>
+        <item>u+1f697</item>
+        <item>u+1f695</item>
+        <item>u+1f696</item>
+        <item>u+1f69b</item>
+        <item>u+1f69a</item>
+        <item>u+1f6a8</item>
+        <item>u+1f693</item>
+        <item>u+1f694</item>
+        <item>u+1f692</item>
+        <item>u+1f691</item>
+        <item>u+1f690</item>
+        <item>u+1f6b2</item>
+        <item>u+1f6a1</item>
+        <item>u+1f69f</item>
+        <item>u+1f6a0</item>
+        <item>u+1f69c</item>
+        <item>u+1f488</item>
+        <item>u+1f68f</item>
+        <item>u+1f3ab</item>
+        <item>u+1f6a6</item>
+        <item>u+1f6a5</item>
+        <item>u+26a0</item>
+        <item>u+1f6a7</item>
+        <item>u+1f530</item>
+        <item>u+26fd</item>
+        <item>u+1f3ee</item>
+        <item>u+1f3b0</item>
+        <item>u+2668</item>
+        <item>u+1f5ff</item>
+        <item>u+1f3aa</item>
+        <item>u+1f3ad</item>
+        <item>u+1f4cd</item>
+        <item>u+1f6a9</item>
+    </string-array>
+    <string-array name="currency_options">
+        <item>USD</item>
+        <item>INR </item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+    </string-array>
+</resources>
